@@ -156,38 +156,38 @@ if click==True:
     col=st.selectbox("Select Data from drop down list:",C)
     if col=='Correlation':
         st.error('Visualizing Data...')
-        st.image('10.PNG', width=555)
+        st.image('10.png', width=555)
         st.success('Data Visualized Successfully!!!')
 #-----------------------------------------------------------------------------------------------------------------------------------------
     if col=='Crop_Price':
         st.error('Visualizing Data...')
-        st.image('2.PNG', width=777)
+        st.image('2.png', width=777)
         st.success('Data Visualized Successfully!!!')
 #-----------------------------------------------------------------------------------------------------------------------------------------
     if col=='Area Under Cultivation':
         st.error('Visualizing Data...')
-        st.image('3.PNG', width=777)
+        st.image('3.png', width=777)
         st.success('Data Visualized Successfully!!!')
 #------------------------------------------------------------------------------------------------------------------------------------------
     if col=='Cultivation Cost':
         st.error('Visualizing Data...')
-        st.image('4.PNG', width=888)
-        st.image('5.PNG', width=888)
+        st.image('4.png', width=888)
+        st.image('5.png', width=888)
         st.success('Data Visualized Successfully!!!')
 #-------------------------------------------------------------------------------------------------------------------------------------------
     if col=='Mean Temperature':
         st.error('Visualizing Data...')
-        st.image('6.PNG', width=777)
+        st.image('6.png', width=777)
         st.success('Data Visualized Successfully!!!')
 #--------------------------------------------------------------------------------------------------------------------------------------------
     if col=='Rainfall':
         st.error('Visualizing Data...')
-        st.image('7.PNG', width=777)
+        st.image('7.png', width=777)
         st.success('Data Visualized Successfully!!!')
 #---------------------------------------------------------------------------------------------------------------------------------------------
     if col=='Major Crop':
         st.error('Visualizing Data...')
-        st.image('8.PNG', width=777)
+        st.image('8.png', width=777)
         st.success('Data Visualized Successfully!!!')
 #===============================================================================================================================================
 click= st.checkbox('Observation')
