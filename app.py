@@ -353,7 +353,7 @@ if click==True:
     np.set_printoptions(suppress=True)
     import tensorflow
     from PIL import Image, ImageOps
-    import cv2
+
     model= tensorflow.keras.models.load_model('Prathamesh.h5')
     data = np.ndarray(shape=(1, 224, 224, 3), dtype=np.float32)
     img_path = st.file_uploader("Upload:",type=['png','jpeg','jpg'])
