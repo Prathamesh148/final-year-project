@@ -15,12 +15,6 @@ import pylab
 import warnings
 warnings.filterwarnings('ignore')
 from itertools import cycle
-from sklearn.cluster import KMeans as km
-from sklearn.linear_model import LinearRegression as LR
-from sklearn.linear_model import Lasso as LS
-from sklearn.linear_model import Ridge as RG
-from sklearn.tree import DecisionTreeRegressor as scart
-from sklearn.manifold import TSNE
 #---------------------------------------------------------------------------------------------------------------------------------------
 add_selectbox = st.sidebar.markdown(':sunglasses: Name: Prathamesh Laxman Kashid :sunglasses:')
 add_selectbox = st.sidebar.markdown('Seat Number:____________________')
