@@ -228,8 +228,8 @@ if click==True:
     st.image('9.png', width=777)
 
     from PIL import Image, ImageOps
-    image1 = Image.open("s2.JPG")
-    image2 = Image.open("s5.PNG")
+    image1 = Image.open("s2.jpg")
+    image2 = Image.open("s5.png")
     fig = plt.figure()
     #First Image
     plt.subplot(1, 2, 1)
