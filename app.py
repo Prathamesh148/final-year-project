@@ -196,19 +196,19 @@ if click==True:
        'crops that have lower rate of increase in cost per hectare than price']
     col=st.selectbox("Select Data from drop down list:",C)
     if col=='crops that have reduction in production':
-        st.image('21.PNG', width=222)
+        st.image('21.png', width=222)
         st.markdown(' The above crops shows the crops that have negative overall slope or in other words have seen decrease in production over the years. The threshold we used is -1000.')
 #-----------------------------------------------------------------------------------------------------------------------------------------
     if col=='crops that have reduction in production but their price is increasing':
-        st.image('22.PNG', width=333)
+        st.image('22.png', width=333)
         st.markdown('In this we tried to find the crops that have reduction in production of the crop but there is still increase in price of the crop. This shows that the production has been decreasing but the demand for the same crops is not as can be observed by the positive value of slope.')
 #-----------------------------------------------------------------------------------------------------------------------------------------
     if col=='crops which has lower increase in production but are increasing in price':
-        st.image('23.PNG', width=222)
+        st.image('23.png', width=222)
         st.markdown('The above crops are those that have lower increase in production but has increase higher increase in price. This shows that the increase in production of that crop is not as much as 27 demand. These crops will be more profitable to produce. Threshold used for production is -10000 and for price is 100.')
 #------------------------------------------------------------------------------------------------------------------------------------------
     if col=='crops that have lower rate of increase in cost per hectare than price':
-        st.image('24.PNG', width=333)
+        st.image('24.png', width=333)
         st.markdown('I tried to find out the crops that has lower rate of increase in cost per hectare but has increase in price of that crop more. This shows that these crops can give more returns.')
 
 #====================================================================================================================================
@@ -225,7 +225,7 @@ if click==True:
     suicides
     
     st.success('Visualizing Data...')
-    st.image('9.PNG', width=777)
+    st.image('9.png', width=777)
 
     from PIL import Image, ImageOps
     image1 = Image.open("s2.JPG")
