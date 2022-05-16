@@ -256,7 +256,7 @@ if click==True:
             webbrowser.open_new(url)
             
         res = requests.get(url)
-        st.write(res.text)
+        st.text(res.text)
 #=======================================================================================================================================================
 click= st.sidebar.checkbox('Crop Recommendation')
 if click==True:
