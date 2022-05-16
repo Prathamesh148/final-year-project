@@ -17,9 +17,9 @@ warnings.filterwarnings('ignore')
 from itertools import cycle
 #---------------------------------------------------------------------------------------------------------------------------------------
 add_selectbox = st.header('Project Name: DS in Agriculture Sector :sunglasses:')
-st.sidebar.image('f1.png', width=180)
-#add_selectbox = st.sidebar.markdown(':sunglasses: Name: Prathamesh Laxman Kashid :sunglasses:')
-#add_selectbox = st.sidebar.markdown(':sunglasses: Partner: Siddhesh Deepak Patil :sunglasses:')
+add_selectbox = st.sidebar.markdown(':sunglasses: Name: Prathamesh Laxman Kashid :sunglasses:')
+add_selectbox = st.sidebar.markdown('Seat Number:____________________')
+add_selectbox = st.sidebar.markdown('-----------------------------------------------------------')
 #============================================================================================================================================================    
 click= st.sidebar.checkbox('Data Reading')
 if click==True:
@@ -364,5 +364,6 @@ if click==True:
         st.write("\nConfident:",100 * np.max(prediction))
         st.write("\nFertilizer:",class_fe[np.argmax(prediction)])
 #===================================================================================================================================================
-
-
+add_selectbox = st.sidebar.markdown('------------------------------------------------------')
+add_selectbox = st.sidebar.markdown(':sunglasses: Partner: Siddhesh Deepak Patil :sunglasses:')
+add_selectbox = st.sidebar.markdown('Seat Number:____________________')
