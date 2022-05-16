@@ -16,9 +16,9 @@ import warnings
 warnings.filterwarnings('ignore')
 from itertools import cycle
 #---------------------------------------------------------------------------------------------------------------------------------------
-add_selectbox = st.header('Project Name: DS in Agriculture Sector :sunglasses:')
-add_selectbox = st.sidebar.markdown(':sunglasses: Name: Prathamesh Laxman Kashid :sunglasses:')
-add_selectbox = st.sidebar.markdown(':sunglasses: Partner: Siddhesh Deepak Patil :sunglasses:')
+add_selectbox = st.sidebar.subheader('Project Name: DS in Agriculture Sector :sunglasses:')
+#add_selectbox = st.sidebar.markdown(':sunglasses: Name: Prathamesh Laxman Kashid :sunglasses:')
+#add_selectbox = st.sidebar.markdown(':sunglasses: Partner: Siddhesh Deepak Patil :sunglasses:')
 #============================================================================================================================================================    
 click= st.sidebar.checkbox('Data Reading')
 if click==True:
