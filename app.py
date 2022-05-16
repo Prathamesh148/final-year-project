@@ -245,6 +245,7 @@ if click==True:
     city = st.text_input('Enter City name: ')
     if city:
         url = 'https://wttr.in/{}'.format(city)
+        res = requests.get(url)   
         st.text(res.text)
 #=======================================================================================================================================================
 click= st.sidebar.checkbox('Crop Recommendation')
