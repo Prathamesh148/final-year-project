@@ -249,8 +249,8 @@ if click==True:
         a=st.button('View Weather Forecast')
         if a:
             webbrowser.open(url)
-        #res = requests.get(url)
-        #st.write(res)
+        res = requests.get(url)
+        st.write(res)
         a=st.button('Weather forecast over India')
         if a:
         #url = 'https://mausam.imd.gov.in/'
