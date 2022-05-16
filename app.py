@@ -245,17 +245,6 @@ if click==True:
     city = st.text_input('Enter City name: ')
     if city:
         url = 'https://wttr.in/{}'.format(city)
-        a=st.button('View Weather Forecast')
-        if a:
-            webbrowser.open(url)
-        a=st.button('Weather forecast over India')
-        if a:
-        #url = 'https://mausam.imd.gov.in/'
-            url='https://mausam.imd.gov.in/imd_latest/contents/subdivisionwise-warning.php'
-            webbrowser.open_new_tab(url)
-            webbrowser.open_new(url)
-            
-        res = requests.get(url)
         st.text(res.text)
 #=======================================================================================================================================================
 click= st.sidebar.checkbox('Crop Recommendation')
