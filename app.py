@@ -248,13 +248,13 @@ if click==True:
         a=st.button('View Weather Forecast')
         if a:
             webbrowser.open(url)
-        res = requests.get(url)
-        st.write(res.text)
         a=st.button('Weather forecast over India')
         if a:
         #url = 'https://mausam.imd.gov.in/'
             url='https://mausam.imd.gov.in/imd_latest/contents/subdivisionwise-warning.php'
             webbrowser.open_new_tab(url)
+        res = requests.get(url)
+        st.write(res.text)
 #=======================================================================================================================================================
 click= st.sidebar.checkbox('Crop Recommendation')
 if click==True:
