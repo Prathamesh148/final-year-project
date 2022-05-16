@@ -253,7 +253,7 @@ if click==True:
         #url = 'https://mausam.imd.gov.in/'
             url='https://mausam.imd.gov.in/imd_latest/contents/subdivisionwise-warning.php'
             webbrowser.open_new_tab(url)
-             webbrowser.open_new(url)
+            webbrowser.open_new(url)
             
         res = requests.get(url)
         st.write(res.text)
