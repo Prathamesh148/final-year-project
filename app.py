@@ -16,15 +16,13 @@ import warnings
 warnings.filterwarnings('ignore')
 from itertools import cycle
 #---------------------------------------------------------------------------------------------------------------------------------------
-add_selectbox = st.sidebar.markdown(':sunglasses: Name: Prathamesh Laxman Kashid :sunglasses:')
-add_selectbox = st.sidebar.markdown('Seat Number:____________________')
 add_selectbox = st.sidebar.markdown('Project Name: DS in Agriculture Sector :sunglasses:')
 st.sidebar.image('pk.jfif', width=300)
 add_selectbox = st.header('Final Year Project (2021-2022) :sunglasses:')
 #============================================================================================================================================================    
 click= st.checkbox('Data Reading')
 if click==True:
-    #add_selectbox = st.subheader('Data Reading')
+    #add_selectbox = st.sidebar.subheader('Data Reading')
     A=['Crop Production','Crop Price','Area Under Cultivation','Cultivation Cost','Mean Temperature','Rainfall','Major Crop','Indian Export']
     col=st.selectbox("Select option for fetching the data:",A)
     if col=='Crop Production':
@@ -75,7 +73,7 @@ if click==True:
         exports
         st.success('Data Fetch Successfully!!!')
 #======================================================================================================================================================
-click= st.checkbox('Data Prepocessing')
+click= st.sidebar.checkbox('Data Prepocessing')
 if click==True:
     B=['Crop_Production','Crop Price','Area Under Cultivation','Cultivation Cost','Mean Temperature','Rainfall','Major Crop','Indian Export']
     col=st.selectbox("Select Data from drop down list:",B)
@@ -150,7 +148,7 @@ if click==True:
         exports
         st.success('Data Preprocessed Successfully!!!')
 #======================================================================================================================================================
-click= st.checkbox('Data Visualization')
+click= st.sidebar.checkbox('Data Visualization')
 if click==True:
     C=['Correlation','Crop_Price','Area Under Cultivation','Cultivation Cost','Mean Temperature','Rainfall','Major Crop']
     col=st.selectbox("Select Data from drop down list:",C)
@@ -190,7 +188,7 @@ if click==True:
         st.image('States_max_prod.png', width=777)
         st.success('Data Visualized Successfully!!!')
 #===============================================================================================================================================
-click= st.checkbox('Observation')
+click= st.sidebar.checkbox('Observation')
 if click==True:
     C=['crops that have reduction in production','crops that have reduction in production but their price is increasing','crops which has lower increase in production but are increasing in price',
        'crops that have lower rate of increase in cost per hectare than price']
@@ -212,7 +210,7 @@ if click==True:
         st.markdown('I tried to find out the crops that has lower rate of increase in cost per hectare but has increase in price of that crop more. This shows that these crops can give more returns.')
 
 #====================================================================================================================================
-click= st.checkbox('Suicides Analysis')
+click= st.sidebar.checkbox('Suicides Analysis')
 if click==True:
     st.error('Fetching Sucidies Data...')
     suicides = pd.read_csv('suicides_10-14.csv',delimiter = ',')
@@ -239,7 +237,7 @@ if click==True:
     plt.imshow(image2)
     st.pyplot(fig)
 #=========================================================================================================================
-click= st.checkbox('Weather Forecasting')
+click= st.sidebar.checkbox('Weather Forecasting')
 if click==True:
     import requests
     import webbrowser
@@ -298,7 +296,7 @@ if click==True:
         plt.show()
         st.pyplot(fig)
 #===============================================================================================================
-click= st.checkbox('Plant Diseases Recognition')
+click= st.sidebar.checkbox('Plant Diseases Recognition')
 if click==True:
     class_na = ['Apple scab', 'Apple Black rot', 'Apple Cedar rust', 'Apple healthy', 'Blueberry healthy',
             'Cherry healthy','Cherry Powdery mildew',  
@@ -373,7 +371,8 @@ if click==True:
         st.write("\nConfident:",100 * np.max(prediction))
         st.write("\nFertilizer:",class_fe[np.argmax(prediction)])
 #===================================================================================================================================================
-
+add_selectbox = st.sidebar.markdown(':sunglasses: Name: Prathamesh Laxman Kashid :sunglasses:')
+add_selectbox = st.sidebar.markdown('Seat Number:____________________')
 add_selectbox = st.sidebar.markdown(':sunglasses: Partner: Siddhesh Deepak Patil :sunglasses:')
 add_selectbox = st.sidebar.markdown('Seat Number:____________________')
 
