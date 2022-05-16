@@ -17,10 +17,9 @@ warnings.filterwarnings('ignore')
 from itertools import cycle
 #---------------------------------------------------------------------------------------------------------------------------------------
 add_selectbox = st.sidebar.markdown('Project Name: DS in Agriculture Sector :sunglasses:')
-st.sidebar.image('pk.jfif', width=300)
 add_selectbox = st.header('Final Year Project (2021-2022) :sunglasses:')
 #============================================================================================================================================================    
-click= st.checkbox('Data Reading')
+click= st.sidebar.checkbox('Data Reading')
 if click==True:
     #add_selectbox = st.sidebar.subheader('Data Reading')
     A=['Crop Production','Crop Price','Area Under Cultivation','Cultivation Cost','Mean Temperature','Rainfall','Major Crop','Indian Export']
@@ -375,5 +374,6 @@ add_selectbox = st.sidebar.markdown(':sunglasses: Name: Prathamesh Laxman Kashid
 add_selectbox = st.sidebar.markdown('Seat Number:____________________')
 add_selectbox = st.sidebar.markdown(':sunglasses: Partner: Siddhesh Deepak Patil :sunglasses:')
 add_selectbox = st.sidebar.markdown('Seat Number:____________________')
+st.sidebar.image('pk.jfif', width=300)
 
 
