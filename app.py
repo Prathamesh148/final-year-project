@@ -254,7 +254,7 @@ if click==True:
             url='https://mausam.imd.gov.in/imd_latest/contents/subdivisionwise-warning.php'
             webbrowser.open_new_tab(url)
 #=======================================================================================================================================================
-click= st.checkbox('Crop Recommendation')
+click= st.sidebar.checkbox('Crop Recommendation')
 if click==True:
     import pandas as pd
     import numpy as np
