@@ -17,7 +17,7 @@ warnings.filterwarnings('ignore')
 from itertools import cycle
 #---------------------------------------------------------------------------------------------------------------------------------------
 add_selectbox = st.sidebar.markdown('Project Name: DS in Agriculture Sector :sunglasses:')
-st.sidebar.image('pk.jfif', width=300)
+st.sidebar.image('pk.jfif', width=250)
 add_selectbox = st.sidebar.markdown('-----------------------------------------------')
 add_selectbox = st.header('Final Year Project (2021-2022) :sunglasses:')
 #============================================================================================================================================================    
