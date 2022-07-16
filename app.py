@@ -240,6 +240,10 @@ if click==True:
 #=========================================================================================================================
 click= st.sidebar.checkbox('Weather Forecasting')
 if click==True:
+    a=st.sidebar.button('Weather forecast over India')
+    if a:
+        url='https://mausam.imd.gov.in/imd_latest/contents/subdivisionwise-warning.php'
+        webbrowser.open_new_tab(url)
     import requests
     import webbrowser
     city = st.text_input('Enter City name: ')
