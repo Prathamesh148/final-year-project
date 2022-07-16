@@ -277,7 +277,7 @@ if click==True:
     c=st.text_input("Enter Potassium Reading:")
     d=st.text_input("Enter temperature:")
     e=st.text_input("Enter humidity:")
-    f=st.text_input("Enter ph:")
+    f=st.text_input("Enter PH Level (Between 0-7):")
     g=st.text_input("Enter rainfall:")
     if g:
         new_data = pd.DataFrame([{'N':a,'P':b,'K':c,'temperature' : d, 'humidity' : e, 'ph' : f, 'rainfall' :g}])
