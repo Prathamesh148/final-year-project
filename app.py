@@ -272,9 +272,9 @@ if click==True:
     classes = pd.concat([a,b],axis=1).sort_values('encoded').set_index('label')
     data = data.drop_duplicates()
     import pickle
-    a=st.text_input("Enter N:")
-    b=st.text_input("Enter P:")
-    c=st.text_input("Enter K:")
+    a=st.text_input("Enter Nitrogen Reading:")
+    b=st.text_input("Enter Phosphorus Reading:")
+    c=st.text_input("Enter Potassium Reading:")
     d=st.text_input("Enter temperature:")
     e=st.text_input("Enter humidity:")
     f=st.text_input("Enter ph:")
