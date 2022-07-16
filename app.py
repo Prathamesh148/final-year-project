@@ -250,7 +250,7 @@ if click==True:
         a=st.sidebar.button('Weather forecast over India')
         if a:
             url='https://mausam.imd.gov.in/imd_latest/contents/subdivisionwise-warning.php'
-            webbrowser.open_new_tab(url)
+            webbrowser.open_new(url)
 #=======================================================================================================================================================
 click= st.sidebar.checkbox('Crop Recommendation')
 if click==True:
@@ -272,9 +272,9 @@ if click==True:
     classes = pd.concat([a,b],axis=1).sort_values('encoded').set_index('label')
     data = data.drop_duplicates()
     import pickle
-    a=st.text_input("Enter Nitrogen Reading:")
-    b=st.text_input("Enter Phosphorus Reading:")
-    c=st.text_input("Enter Potassium Reading:")
+    a=st.text_input("Enter Nitrogen Level:")
+    b=st.text_input("Enter Phosphorus Level:")
+    c=st.text_input("Enter Potassium Level:")
     d=st.text_input("Enter temperature:")
     e=st.text_input("Enter humidity:")
     f=st.text_input("Enter PH Level (Between 0-7):")
