@@ -247,10 +247,10 @@ if click==True:
         url = 'https://wttr.in/{}'.format(city)
         res = requests.get(url)   
         st.text(res.text)
-   a=st.sidebar.button('Weather forecast over India')
-   if a:
-        url='https://mausam.imd.gov.in/imd_latest/contents/subdivisionwise-warning.php'
-        webbrowser.open_new_tab(url)
+        a=st.sidebar.button('Weather forecast over India')
+        if a:
+            url='https://mausam.imd.gov.in/imd_latest/contents/subdivisionwise-warning.php'
+            webbrowser.open_new_tab(url)
 #=======================================================================================================================================================
 click= st.sidebar.checkbox('Crop Recommendation')
 if click==True:
