@@ -250,7 +250,7 @@ if click==True:
         a=st.sidebar.button('Weather forecast over India')
         if a:
             url='https://mausam.imd.gov.in/imd_latest/contents/subdivisionwise-warning.php'
-            webbrowser.open_new(url)
+            webbrowser.open(url)
 #=======================================================================================================================================================
 click= st.sidebar.checkbox('Crop Recommendation')
 if click==True:
